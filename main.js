@@ -1,3 +1,5 @@
+/* eslint-env browser */
+
 // Mobile nav
 const hamburger = document.getElementById('hamburger');
 const mobileNav = document.getElementById('mobile-nav');
@@ -45,6 +47,7 @@ const revealSelectors = [
 document.querySelectorAll(revealSelectors.join(', ')).forEach((el, i) => {
   el.style.opacity = '0';
   el.style.transform = 'translateY(18px)';
-  el.style.transition = `opacity 0.5s ease ${i * 0.05}s, transform 0.5s ease ${i * 0.05}s`;
+  const delay = Math.min(i * 0.05, 0.3);
+  el.style.transition = `opacity 0.5s ease ${delay}s, transform 0.5s ease ${delay}s`;
   observer.observe(el);
 });
