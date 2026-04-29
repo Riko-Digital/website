@@ -3,15 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact — Riko Digital</title>
-  <meta name="description" content="Get in touch with Riko Digital. We'd love to hear about your business and how we can help." />
+  <title>Contact Riko Digital | Web Design Agency Westford MA</title>
+  <meta name="description" content="Get in touch with Riko Digital — Westford MA's web design and digital marketing agency for small businesses across Greater Boston." />
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; script-src 'self';">
   <meta name="theme-color" content="#080D1A">
   <meta name="author" content="Riko Digital">
   <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Contact — Riko Digital">
-  <meta property="og:description" content="Get in touch with Riko Digital. We'd love to hear about your business and how we can help.">
+  <meta property="og:title" content="Contact Riko Digital | Web Design Agency Westford MA">
+  <meta property="og:description" content="Get in touch with Riko Digital — Westford MA's web design and digital marketing agency for small businesses across Greater Boston.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rikodigital.com/contact.html">
+  <!-- og:image: create a 1200x630 branded image and upload as og-image.jpg -->
+  <meta property="og:image" content="https://rikodigital.com/og-image.jpg">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,6 +30,7 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
+        <li><span class="nav-phone"><!-- PHONE: replace 000-000-0000 with number once set up --></span></li>
         <li><a href="contact.html" class="nav-cta">Get in touch</a></li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Open menu">
@@ -53,7 +57,7 @@
             <span class="section-label">Get in touch</span>
             <h1>Let's talk about your business.</h1>
             <p>
-              We'd genuinely love to hear what you're working on. Whether you have a clear project in mind or you're just figuring out where to start, drop us an email and we'll get back to you quickly.
+              We'd genuinely love to hear what you're working on. Whether you have a clear project in mind or you're just figuring out where to start, drop us a message and we'll get back to you quickly.
             </p>
 
             <div class="contact-method">
@@ -66,6 +70,17 @@
                   <div class="c-value">contact@rikodigital.com</div>
                 </div>
               </a>
+
+              <!-- PHONE: replace 000-000-0000 with Google Voice number once set up -->
+              <div class="contact-phone-card">
+                <div class="c-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div>
+                  <div class="c-label">Call or text</div>
+                  <div class="c-value" style="color: var(--text-secondary); font-size: 0.85rem; font-weight: 500;">Number coming soon</div>
+                </div>
+              </div>
             </div>
 
             <div class="contact-note">
@@ -73,46 +88,65 @@
             </div>
           </div>
 
-          <!-- Right: Visual -->
-          <div class="contact-visual">
-            <div class="cv-glow"></div>
-            <div class="cv-cards">
-              <div class="cv-card">
-                <div class="cv-card-title">
-                  <span class="cv-dot"></span>
-                  Website Design &amp; Build
+          <!-- Right: Contact Form -->
+          <div class="contact-form-wrap">
+            <form class="contact-form" action="mailto:contact@rikodigital.com" method="POST" enctype="text/plain">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Your name</label>
+                  <input type="text" id="name" name="name" placeholder="Jane Smith" required>
                 </div>
-                <div class="cv-card-sub">Custom, fast, built to convert</div>
-              </div>
-              <div class="cv-card">
-                <div class="cv-card-title">
-                  <span class="cv-dot"></span>
-                  Social Media Management
+                <div class="form-group">
+                  <label for="business">Business name</label>
+                  <input type="text" id="business" name="business" placeholder="Acme Plumbing" required>
                 </div>
-                <div class="cv-card-sub">Consistent, on-brand content</div>
               </div>
-              <div class="cv-card">
-                <div class="cv-card-title">
-                  <span class="cv-dot"></span>
-                  Email Marketing
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email address</label>
+                  <input type="email" id="email" name="email" placeholder="jane@example.com" required>
                 </div>
-                <div class="cv-card-sub">Campaigns that get opened</div>
-              </div>
-              <div class="cv-card">
-                <div class="cv-card-title">
-                  <span class="cv-dot"></span>
-                  AI &amp; Automation
+                <div class="form-group">
+                  <label for="phone">Phone <span style="font-weight:400;text-transform:none;font-size:0.75rem;">(optional)</span></label>
+                  <input type="tel" id="phone" name="phone" placeholder="(617) 555-0100">
                 </div>
-                <div class="cv-card-sub">Workflows that run without you</div>
               </div>
-              <div class="cv-card">
-                <div class="cv-card-title">
-                  <span class="cv-dot"></span>
-                  Website Maintenance
-                </div>
-                <div class="cv-card-sub">Always fast, secure, up to date</div>
+              <div class="form-group">
+                <label for="service">What do you need help with?</label>
+                <select id="service" name="service">
+                  <option value="" disabled selected>Select a service…</option>
+                  <option value="website">Website Design &amp; Build</option>
+                  <option value="maintenance">Website Maintenance</option>
+                  <option value="social">Social Media Management</option>
+                  <option value="email">Email Marketing</option>
+                  <option value="ai">AI &amp; Automation</option>
+                  <option value="unsure">Not sure yet</option>
+                </select>
               </div>
-            </div>
+              <div class="form-group">
+                <label for="about">Tell us about your business</label>
+                <textarea id="about" name="about" placeholder="What does your business do? What are you struggling with online? What would success look like?" required></textarea>
+              </div>
+              <div class="form-group">
+                <label for="source">How did you hear about us?</label>
+                <select id="source" name="source">
+                  <option value="" disabled selected>Select one…</option>
+                  <option value="google-search">Google Search</option>
+                  <option value="google-maps">Google Maps</option>
+                  <option value="referral">Referral from someone</option>
+                  <option value="social">Social Media</option>
+                  <option value="in-person">Walk-in / met in person</option>
+                  <option value="cold-email">Cold email</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-submit">
+                <button type="submit" class="btn btn-primary">
+                  Send message
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </button>
+              </div>
+            </form>
           </div>
 
         </div>
@@ -124,15 +158,29 @@
   <footer>
     <div class="container">
       <div class="footer-inner">
-        <div class="footer-logo">Riko<span>Digital</span></div>
-        <div class="footer-info">
-          <span>Greater Boston Area</span>
-          <span class="footer-sep">·</span>
-          <a href="mailto:contact@rikodigital.com">contact@rikodigital.com</a>
-          <span class="footer-sep">·</span>
-          <span>© 2026 Riko Digital</span>
+        <div class="footer-col">
+          <div class="footer-logo">Riko<span>Digital</span></div>
+          <p class="footer-tagline">Greater Boston's web and marketing studio for small businesses.</p>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Quick links</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Get in touch</div>
+          <div class="footer-contact-line">
+            <a href="mailto:contact@rikodigital.com">contact@rikodigital.com</a>
+            <!-- PHONE: replace with number once set up -->
+            <span>Serving Westford, Chelmsford, Acton, Lowell + Greater Boston</span>
+          </div>
         </div>
       </div>
+      <div class="footer-bottom">© 2026 Riko Digital · Westford, MA</div>
     </div>
   </footer>
 

@@ -3,15 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About — Riko Digital</title>
-  <meta name="description" content="Meet Grant Tajima and Noah Collins, the team behind Riko Digital — a two-person tech services agency based in the Greater Boston area." />
+  <title>About Us | Riko Digital — Westford MA Web Design Agency</title>
+  <meta name="description" content="Meet Grant Tajima and Noah Collins — two Westford Academy juniors building websites and running digital marketing for small businesses across Greater Boston." />
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; script-src 'self';">
   <meta name="theme-color" content="#080D1A">
   <meta name="author" content="Riko Digital">
   <meta name="robots" content="index, follow">
-  <meta property="og:title" content="About — Riko Digital">
-  <meta property="og:description" content="Meet Grant Tajima and Noah Collins — two people who decided to build something real rather than wait for the right moment.">
+  <meta property="og:title" content="About Us | Riko Digital — Westford MA Web Design Agency">
+  <meta property="og:description" content="Meet Grant Tajima and Noah Collins — two Westford Academy juniors building websites and running digital marketing for small businesses across Greater Boston.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rikodigital.com/about.html">
+  <!-- og:image: create a 1200x630 branded image and upload as og-image.jpg -->
+  <meta property="og:image" content="https://rikodigital.com/og-image.jpg">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,6 +30,7 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html" class="active">About</a></li>
         <li><a href="services.html">Services</a></li>
+        <li><span class="nav-phone"><!-- PHONE: replace 000-000-0000 with number once set up --></span></li>
         <li><a href="contact.html" class="nav-cta">Get in touch</a></li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Open menu">
@@ -70,6 +74,9 @@
         <p>
           When you work with Riko Digital, you're working directly with the people building your website, writing your emails, and setting up your automations. That's not a pitch — it's just how we operate.
         </p>
+        <p>
+          <strong style="color: var(--text-primary); font-weight: 600;">Why we started Riko Digital.</strong> We started because we kept seeing the same thing — local businesses with great products and terrible websites, paying too much for agencies that didn't care. We knew we could do better. Two Westford Academy juniors, one simple goal: help local businesses look as good online as they are in real life.
+        </p>
       </div>
     </section>
 
@@ -84,7 +91,8 @@
           <div class="team-card">
             <div class="team-photo">
               <div class="photo-glow"></div>
-              <div class="photo-initials">GT</div>
+              <!-- PHOTO: Replace this div with <img src="grant-photo.jpg" alt="Grant Tajima"> when photo is ready -->
+              <div class="photo-placeholder">Photo coming soon</div>
             </div>
             <div class="team-body">
               <div class="team-name">Grant Tajima</div>
@@ -108,7 +116,8 @@
           <div class="team-card">
             <div class="team-photo">
               <div class="photo-glow"></div>
-              <div class="photo-initials">NC</div>
+              <!-- PHOTO: Replace this div with <img src="noah-photo.jpg" alt="Noah Collins"> when photo is ready -->
+              <div class="photo-placeholder">Photo coming soon</div>
             </div>
             <div class="team-body">
               <div class="team-name">Noah Collins</div>
@@ -186,15 +195,29 @@
   <footer>
     <div class="container">
       <div class="footer-inner">
-        <div class="footer-logo">Riko<span>Digital</span></div>
-        <div class="footer-info">
-          <span>Greater Boston Area</span>
-          <span class="footer-sep">·</span>
-          <a href="mailto:contact@rikodigital.com">contact@rikodigital.com</a>
-          <span class="footer-sep">·</span>
-          <span>© 2026 Riko Digital</span>
+        <div class="footer-col">
+          <div class="footer-logo">Riko<span>Digital</span></div>
+          <p class="footer-tagline">Greater Boston's web and marketing studio for small businesses.</p>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Quick links</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Get in touch</div>
+          <div class="footer-contact-line">
+            <a href="mailto:contact@rikodigital.com">contact@rikodigital.com</a>
+            <!-- PHONE: replace with number once set up -->
+            <span>Serving Westford, Chelmsford, Acton, Lowell + Greater Boston</span>
+          </div>
         </div>
       </div>
+      <div class="footer-bottom">© 2026 Riko Digital · Westford, MA</div>
     </div>
   </footer>
 
