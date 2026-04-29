@@ -41,7 +41,8 @@ const observer = new IntersectionObserver((entries) => {
 const revealSelectors = [
   '.service-card', '.why-card', '.team-card',
   '.value-card', '.service-item', '.cv-card',
-  '.contact-email-card', '.contact-note'
+  '.contact-email-card', '.contact-note',
+  '.process-step', '.trust-card'
 ];
 
 document.querySelectorAll(revealSelectors.join(', ')).forEach((el, i) => {
