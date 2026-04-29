@@ -658,7 +658,7 @@ footer {
   .contact-inner { grid-template-columns: 1fr; gap: 48px; }
   .process-grid { grid-template-columns: 1fr; }
   .trust-grid { grid-template-columns: 1fr 1fr; }
-  .footer-inner { grid-template-columns: 1fr 1fr; }
+  .footer-inner { gap: 32px; }
   .form-row { grid-template-columns: 1fr; }
 }
 
@@ -674,7 +674,8 @@ footer {
   .why-grid { grid-template-columns: 1fr; }
   .values-grid { grid-template-columns: 1fr; }
   .trust-grid { grid-template-columns: 1fr; }
-  .footer-inner { grid-template-columns: 1fr; gap: 32px; }
+  .footer-inner { grid-template-columns: 1fr; gap: 28px; }
+  footer { padding-top: 40px; }
   .hero-meta { flex-direction: column; align-items: flex-start; gap: 14px; }
   .hero-actions { flex-direction: column; align-items: flex-start; }
 }
